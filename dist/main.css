@@ -1,0 +1,39 @@
+/*!****************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles.scss ***!
+  \****************************************************************************************************************************************************/
+@import url(https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap);
+/*!********************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles.scss (1) ***!
+  \********************************************************************************************************************************************************/
+body {
+  box-sizing: border-box;
+  height: calc(100vh - 64px);
+  border: 2px solid lightseagreen;
+  border-radius: 8px;
+  font-family: "Roboto", sans-serif;
+  margin: 32px;
+  font-size: 24px;
+}
+body img {
+  width: 100%;
+  height: auto;
+  /* display: block; */
+}
+body #react-app {
+  padding: 32px;
+}
+body button {
+  font-family: inherit;
+  padding: 8px 16px;
+  margin: 16px 0;
+  font-size: 22px;
+  border-radius: 8px;
+  border: 1px solid grey;
+}
+body .container .item {
+  border: 1px solid black;
+  -ms-writing-mode: tb-lr;
+      writing-mode: vertical-lr;
+}
+
+/*# sourceMappingURL=main.css.map*/

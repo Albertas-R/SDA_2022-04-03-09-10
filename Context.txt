@@ -1,0 +1,48 @@
+https://reactjs.org/docs/context.html
+
+1.
+https://reactjs.org/docs/context.html#reactcreatecontext
+
+2.
+https://reactjs.org/docs/context.html#contextprovider
+
+3. 
+https://reactjs.org/docs/context.html#classcontexttype
+
+------------------------------------------------------------
+
+1.
+// Create a context for the current theme (with "light" as the default).
+
+const ThemeContext = React.createContext('light');
+
+2.
+// Use a Provider to pass the current theme to the tree below.
+
+<ThemeContext.Provider value="dark">
+  <Toolbar />
+</ThemeContext.Provider>
+
+3.
+// https://reactjs.org/docs/hooks-reference.html#usecontext
+// žemiau Putting it together with Context.Provider
+
+const theme = useContext(ThemeContext);
+
+
+3. su class
+// Assign a contextType to read the current theme context.
+
+class ThemedButton extends React.Component {
+   static contextType = ThemeContext;
+   render() {
+      return <Button theme={this.context} />;
+   }
+}
+
+jeigu ne class vietoj contextType naudojam const theme = useContext(ThemeContext); 
+
+------------------------------------------------------------
+
+NESUPRATAU pvz:
+https://reactjs.org/docs/context.html#before-you-use-context
